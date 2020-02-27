@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather app!</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Weather App!</h1>
+        <div class="card" style="width: 22rem;">
+            <div class="card-body">
+              <form method="POST" action="/">
+                  <label for="input-u">Enter City:</label>
+                  <input id="input-u" name="city_name"  class="form-control" type="text" placeholder="">
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+              </form>
+            </div>
+          </div>
+        <div class="card" style="width: 22rem;">
+            <div class="card-body media-box">
+                <figure class="icon-fig">
+                    <img src="http://openweathermap.org/img/wn/<%= weather.icon %>.png" alt="">
+                </figure>
+                <div class="info">
+                    <h2 class="city-name"><%= weather.city %></h2> 
+                    <h3 class="temp"><%= weather.temperature %><span>°C</span></h3> 
+                    <!-- change in ejs -->
+                    <p class="desc"><%= weather.description %></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

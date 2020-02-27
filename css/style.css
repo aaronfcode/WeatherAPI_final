@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+    padding: 0;
+}
+.container{
+    background-color: #D8D8D8;
+    padding: 25px;
+    position: relative;
+    top: 50px;
+}
+.card{
+    margin: 10px auto;
+    background-color: azure
+}
+
+.media-box{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    /* grid-gap: 3px; */
+}
+.icon-fig{
+    /* background-color: blueviolet; */
+    padding-right: 1em;
+}
+.icon-fig img{
+    /* background-color: blueviolet; */
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+.city-name{
+    margin: 0;
+    
+    /* background-color: blueviolet; */
+}
+.temp{
+    /* text-align: center; */
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+.temp span{
+    font-size: 20px;
+
+}
+
+.desc{
+
+}
+
+.main-title{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 5px;
+}
